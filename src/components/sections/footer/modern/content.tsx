@@ -22,10 +22,8 @@ const Copyright = () => {
         ev4n
       </h1>
       <p className="mt-4 text-xs sm:mt-0 sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-        Released under{' '}
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/">
-          CC-BY-NC 4.0
-        </a>
+        Released under the{' '}
+        <a href="https://opensource.org/license/mit">MIT License</a>
         <br />
         Copyright © 2024 - Present {meta.author.name}
       </p>
