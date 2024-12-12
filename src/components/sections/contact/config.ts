@@ -11,7 +11,7 @@ const contact: Contact = {
     },
     {
       name: 'Discord',
-      href: 'https://discord.com',
+      href: 'https://discord.com/users/598624275083034654',
       Icon: SiDiscord
     }
   ]

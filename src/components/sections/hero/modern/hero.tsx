@@ -12,8 +12,8 @@ const heroContent = [
   { role: 'thinker', action: 'solve', emoji: '🤔', bgColor: 'bg-yellow-100' },
   { role: 'learner', action: 'grow', emoji: '📚', bgColor: 'bg-purple-100' },
   { role: 'creator', action: 'build', emoji: '✨', bgColor: 'bg-pink-100' },
-  { role: 'teammate', action: 'collab', emoji: '🤝', bgColor: 'bg-orange-100' },
-  { role: 'fixer', action: 'repair', emoji: '🛠️', bgColor: 'bg-gray-100' }
+  { role: 'teammate', action: 'collab', emoji: '🤝', bgColor: 'bg-orange-100' }
+  // { role: 'fixer', action: 'repair', emoji: '🛠️', bgColor: 'bg-gray-100' }
 ];
 
 const textLoopVariants = {
@@ -41,7 +41,7 @@ function Hero() {
         <div className="relative flex h-full flex-col items-center justify-center">
           <div className="flex w-full items-center justify-center px-4 md:px-6">
             <h1 className="text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
-              <span>A </span>
+              <span>a </span>
               <TextLoop
                 className="overflow-y-clip"
                 transition={textLoopTransition}
@@ -53,7 +53,7 @@ function Hero() {
               </TextLoop>
               <br />
               <span className="flex items-center gap-2 md:gap-4">
-                <span>Who</span>
+                <span>who</span>
                 <TextLoop
                   className="my-auto inline-block h-[3.25rem] overflow-hidden overflow-y-clip md:h-[7.8rem]"
                   transition={textLoopTransition}

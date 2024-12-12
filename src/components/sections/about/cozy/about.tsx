@@ -20,7 +20,7 @@ function About() {
                 <TextReveal>
                   hey there 👋
                   <br />
-                  I&apos;m a developer from NZ.
+                  i&apos;m a developer from NZ.
                 </TextReveal>
               </p>
               <div className="flex gap-2">
@@ -30,7 +30,7 @@ function About() {
                   </a>
                 </Button> */}
                 <Button asChild>
-                  <Link href="/about">Learn More</Link>
+                  <Link href="/about">learn more</Link>
                 </Button>
               </div>
             </div>

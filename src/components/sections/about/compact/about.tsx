@@ -18,7 +18,7 @@ function About() {
               <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 hey there 👋
                 <br />
-                I&apos;m a developer from NZ.
+                i&apos;m a developer from NZ.
               </p>
               <div className="flex gap-2">
                 <Button asChild variant={'outline'}>

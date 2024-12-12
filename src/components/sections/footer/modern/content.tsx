@@ -25,7 +25,7 @@ const Copyright = () => {
         Released under the{' '}
         <a href="https://opensource.org/license/mit">MIT License</a>
         <br />
-        Copyright © 2024 - Present {meta.author.name}
+        Copyright © 2024 - Present | {meta.author.name}
       </p>
     </div>
   );
