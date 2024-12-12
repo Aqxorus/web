@@ -19,7 +19,7 @@ export default function About() {
         <div className="flex flex-col items-center md:max-w-7xl">
           <h1 className="leading-wide tracking-relaxed text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
             <TextReveal delay={0.1}>
-              A young tech enthusiast who loves to code
+              A young tech enthusiast who loves to code and build stuff
             </TextReveal>
           </h1>
 
