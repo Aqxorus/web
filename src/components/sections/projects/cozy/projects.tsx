@@ -21,12 +21,12 @@ function Projects() {
           <div className="flex flex-col items-center lg:items-start">
             <Reveal>
               <h2 className="text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
-                My
+                my
               </h2>
             </Reveal>
             <Reveal>
               <h2 className="-mt-2 text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
-                Projects
+                projects
               </h2>
             </Reveal>
           </div>

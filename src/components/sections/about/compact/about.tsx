@@ -12,13 +12,13 @@ function About() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              About Me
+              about me
             </h2>
             <div className="space-y-4">
               <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                hey there 👋
+                Hey there 👋
                 <br />
-                i&apos;m a developer from NZ.
+                I&apos;m a developer from NZ.
               </p>
               <div className="flex gap-2">
                 <Button asChild variant={'outline'}>

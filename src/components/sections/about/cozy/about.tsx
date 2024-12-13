@@ -13,14 +13,14 @@ function About() {
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
-              <TextReveal>About Me</TextReveal>
+              <TextReveal>about me</TextReveal>
             </h2>
             <div className="space-y-4">
               <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 <TextReveal>
-                  hey there 👋
+                  Hey there 👋
                   <br />
-                  i&apos;m a developer from NZ.
+                  I&apos;m a developer from NZ.
                 </TextReveal>
               </p>
               <div className="flex gap-2">
@@ -30,7 +30,7 @@ function About() {
                   </a>
                 </Button> */}
                 <Button asChild>
-                  <Link href="/about">learn more</Link>
+                  <Link href="/about">Learn More</Link>
                 </Button>
               </div>
             </div>
