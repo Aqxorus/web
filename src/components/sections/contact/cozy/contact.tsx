@@ -17,7 +17,7 @@ function Contact() {
       <div className="px-4 md:px-6">
         <div className="py-3">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            <TextReveal>Contact Me</TextReveal>
+            <TextReveal>contact me</TextReveal>
           </h2>
           <p className="max-w-[600px] text-muted-foreground">
             <TextReveal>
