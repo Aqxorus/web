@@ -5,6 +5,8 @@ import { metadata as meta } from '@/app/config';
 import { footer } from '@/components/sections/footer/config';
 import { links } from '@/components/sections/header/config';
 import { contact } from '@/components/sections/contact/config';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
 
 export default function Content() {
   return (
@@ -23,7 +25,12 @@ const Copyright = () => {
       </h1>
       <p className="mt-4 text-xs sm:mt-0 sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
         Released under the{' '}
-        <a href="https://opensource.org/license/mit">MIT License</a>
+        <a
+          href="https://opensource.org/license/mit"
+          className="underline underline-offset-4"
+        >
+          MIT License
+        </a>
         <br />
         Copyright © 2024 - Present | {meta.author.name}
       </p>
