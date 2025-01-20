@@ -2,7 +2,7 @@ import { Contact } from '@/types/contact';
 import { SiGithub, SiDiscord } from '@icons-pack/react-simple-icons';
 
 const contact: Contact = {
-  email: 'jjktd7@gmail.com',
+  email: 'REDACTED',
   socials: [
     {
       name: 'Github',

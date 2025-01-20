@@ -3,7 +3,7 @@ import React from 'react';
 import { buttonVariants } from '@/components/ui/button';
 import MotionWrap from '@/components/motion-wrap';
 
-import ContactForm from './contact-form';
+// import ContactForm from './contact-form';
 
 import { contact } from '@/components/sections/contact/config';
 
@@ -21,26 +21,13 @@ function Contact() {
           </h2>
           <p className="max-w-[600px] text-muted-foreground">
             <TextReveal>
-              Have a question or want to work together? Send me a message using
-              the form.
+              Here are my socials, feel free to reach out to me if you have any
+              questions or just want to chat!
             </TextReveal>
           </p>
         </div>
         <div className="flex flex-wrap">
-          <div className="flex w-full flex-col gap-4 py-3 lg:order-2 lg:w-1/4 lg:pl-3">
-            <div>
-              <p className="text-sm text-muted-foreground">Email</p>
-              {/* todo: seperate this into animated text and use an a instead */}
-              <Link
-                className={cn(
-                  buttonVariants({ variant: 'link' }),
-                  'text-md h-min w-min p-0 font-normal'
-                )}
-                href={`mailto:${contact.email}`}
-              >
-                {contact.email}
-              </Link>
-            </div>
+          <div className="flex w-full flex-col gap-4 py-3">
             <div>
               <p className="text-sm text-muted-foreground">Socials</p>
               <div className="flex flex-col gap-1">
@@ -62,7 +49,7 @@ function Contact() {
             </div>
           </div>
           <div className="flex w-full flex-col gap-4 py-3 lg:w-3/4 lg:pr-3">
-            <ContactForm />
+            {/* <ContactForm /> */}
           </div>
         </div>
       </div>
