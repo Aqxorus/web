@@ -9,7 +9,7 @@ import Reveal from '@/components/reveal';
 import SkillCard from '@/app/about/_components/skill-card';
 import { skills } from '@/components/sections/skills/config';
 import { Footer } from '@/components/sections';
-import ContactForm from '@/components/sections/contact/cozy/contact-form';
+// import ContactForm from '@/components/sections/contact/cozy/contact-form';
 import { contact } from '@/components/sections/contact/config';
 
 import Link from '@/components/motion/link';
@@ -99,16 +99,6 @@ export default function About() {
             <div className="col-span-1 md:col-span-2">
               <h2 className="text-xl font-semibold sm:text-2xl">contact</h2>
               <div className="mt-2 flex flex-col gap-1">
-                <Link
-                  className={cn(
-                    buttonVariants({ variant: 'link' }),
-                    'h-min w-min p-0 text-sm font-normal sm:text-base md:text-lg'
-                  )}
-                  href={`mailto:${contact.email}`}
-                >
-                  <MailIcon className="h-4 w-4" />
-                  {contact.email}
-                </Link>
                 {contact.socials.map(({ Icon, name, href }, index) => (
                   <Link
                     target="_blank"
@@ -125,9 +115,7 @@ export default function About() {
                 ))}
               </div>
             </div>
-            <div className="col-span-1 md:col-span-3">
-              <ContactForm />
-            </div>
+            <div className="col-span-1 md:col-span-3"></div>
           </div>
         </section>
       </main>
