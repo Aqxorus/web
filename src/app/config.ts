@@ -4,7 +4,7 @@ const metadata: Metadata = {
   author: {
     name: 'ev4n',
     username: 'aqxorus',
-    label: 'discord.js bot developer'
+    label: 'discord.js bot developer.'
   },
   site: {
     title: 'ev4n',
