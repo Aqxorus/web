@@ -4,7 +4,7 @@ import {
   About,
   Skills,
   Experience,
-  Testimonials,
+  // Testimonials,
   Projects,
   Contact,
   Footer
