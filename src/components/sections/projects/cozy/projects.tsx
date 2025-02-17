@@ -20,12 +20,12 @@ function Projects() {
           <div className="flex flex-col items-center lg:items-start">
             <TextReveal
               as="h2"
-              className="flex flex-col -space-y-4 text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight"
+              className="flex flex-col -space-y-4 text-4xl leading-tight font-bold tracking-tighter sm:text-5xl md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight"
             >
-              My Projects
+              my projects
             </TextReveal>
           </div>
-          <p className="mt-4 hidden text-gray-500 dark:text-gray-400 lg:mt-0 lg:block lg:w-[35%]">
+          <p className="mt-4 hidden text-gray-500 lg:mt-0 lg:block lg:w-[35%] dark:text-gray-400">
             Here are some of my projects where I&apos;ve turned code into cool,
             functional stuff.
           </p>

@@ -25,7 +25,7 @@ function About() {
               >
                 Hey there 👋
                 <br />
-                I'm a developer from NZ.
+                I&apos;m a developer from NZ.
               </TextReveal>
               <div className="flex gap-2">
                 <Button asChild>

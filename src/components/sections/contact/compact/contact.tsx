@@ -14,17 +14,10 @@ function Contact() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Contact Me
+              contact me
             </h2>
             <p className="text-muted-foreground max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Have a question or want to work together? Send me a message using
-              the form.
-            </p>
-            <p className="text-muted-foreground">
-              Email:{' '}
-              <a className="hover:underline" href={`mailto:${contact.email}`}>
-                {contact.email}
-              </a>
+              Here are my socials
             </p>
             <div className="flex space-x-1">
               {contact.socials.map(({ Icon, href }, index) => (
