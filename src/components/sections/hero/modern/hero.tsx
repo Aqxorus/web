@@ -51,7 +51,7 @@ function Hero() {
               </TextLoop>
               <br />
               <span className="flex items-center gap-2 md:gap-4">
-                <span>Who</span>
+                <span>who</span>
                 <TextLoop
                   className="my-auto inline-block h-[3.25rem] overflow-hidden overflow-y-clip md:h-[7.8rem]"
                   transition={textLoopTransition}
