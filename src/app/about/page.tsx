@@ -31,7 +31,7 @@ export default function About() {
     <main className="flex-1 px-4 sm:px-8 md:px-12 lg:px-16 2xl:px-24">
       <section className="relative -mx-4 flex h-[calc(100svh-(--spacing(14)))] items-center justify-center overflow-hidden pb-12 sm:-mx-8 md:-mx-12 lg:-mx-16 2xl:-mx-24">
         <div className="absolute top-0 left-0 z-0" ref={heroRef}>
-          <ImageTrail containerRef={heroRef}>
+          {/* <ImageTrail containerRef={heroRef}>
             {exampleImages.map((image, index) => (
               <div
                 key={index}
@@ -45,18 +45,18 @@ export default function About() {
                 />
               </div>
             ))}
-          </ImageTrail>
+          </ImageTrail> */}
         </div>
         <div className="relative container mx-auto flex flex-col items-center px-4">
           <TextReveal
             as="h1"
-            className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
+            className="leading-wide tracking-relaxed z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
             Enthusiast
           </TextReveal>
           <TextReveal
             as="h1"
-            className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
+            className="leading-wide tracking-relaxed z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
             Developer
           </TextReveal>
