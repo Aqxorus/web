@@ -8,6 +8,7 @@
   border-radius: 50%;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+  transform-origin: center;
 
   mix-blend-mode: difference;
   background-color: white;

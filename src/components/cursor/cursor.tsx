@@ -6,8 +6,7 @@ import {
   useMotionValue,
   useSpring,
   MotionValue,
-  SpringOptions,
-  AnimationControls
+  SpringOptions
 } from 'motion/react';
 
 interface MouseMoveEvent {
@@ -25,6 +24,7 @@ export default function Cursor() {
   const cursor = useRef<HTMLDivElement>(null);
   const cursorSize = isPressed ? 21 : 15;
   const [isVisible, setIsVisible] = useState(false);
+  const [currentMousePos, setCurrentMousePos] = useState({ x: 0, y: 0 });
 
   const mouse: { x: MotionValue<number>; y: MotionValue<number> } = {
     x: useMotionValue(0),
@@ -32,9 +32,9 @@ export default function Cursor() {
   };
 
   const smoothOptions: SpringOptions = {
-    damping: 20,
-    stiffness: 300,
-    mass: 0.5
+    damping: 15,
+    stiffness: 500,
+    mass: 0.3
   };
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),
@@ -58,8 +58,9 @@ export default function Cursor() {
     if (!isVisible) setIsVisible(true);
 
     const { clientX, clientY } = e;
-    mouse.x.set(clientX - cursorSize / 2);
-    mouse.y.set(clientY - cursorSize / 2);
+    setCurrentMousePos({ x: clientX, y: clientY });
+    mouse.x.set(clientX);
+    mouse.y.set(clientY);
   };
 
   const manageMouseLeave = () => {
@@ -67,7 +68,6 @@ export default function Cursor() {
   };
 
   const handleMouseDown = (e: MouseEvent) => {
-    // prevent right click to trigger pressed
     if (e.button === 2) return;
 
     setIsPressed(true);
@@ -103,33 +103,26 @@ export default function Cursor() {
     };
   }, []);
 
-  const template = ({
-    rotate,
-    scaleX,
-    scaleY
-  }: {
-    rotate: number;
-    scaleX: number;
-    scaleY: number;
-  }) => {
-    return `rotate(${rotate}deg) scaleX(${scaleX}) scaleY(${scaleY})`;
-  };
-
   return (
     <div className={styles.cursorContainer}>
       <motion.div
-        transformTemplate={template}
         style={{
           left: smoothMouse.x,
           top: smoothMouse.y,
-          scaleX: mouse.x,
-          scaleY: mouse.y
+          translateX: '-50%',
+          translateY: '-50%'
         }}
         animate={{
           width: cursorSize,
           height: cursorSize
         }}
-        className={`${styles.cursor} ${isVisible ? styles.visible : styles.hidden}`}
+        transition={{
+          width: { type: 'spring', stiffness: 500, damping: 30 },
+          height: { type: 'spring', stiffness: 500, damping: 30 }
+        }}
+        className={`${styles.cursor} ${
+          isVisible ? styles.visible : styles.hidden
+        }`}
         ref={cursor}
       ></motion.div>
     </div>
