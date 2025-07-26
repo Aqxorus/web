@@ -35,8 +35,8 @@ function Projects() {
               </TextReveal>
             </div>
             <p className="mt-4 hidden text-gray-500 lg:mt-0 lg:block lg:w-[35%] dark:text-gray-400">
-              Here are some of my projects where I&apos;ve turned code into
-              cool, functional stuff.
+              here are some of my projects where I&apos;ve turned code into
+              cool, functional stuff
             </p>
           </div>
 

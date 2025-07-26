@@ -19,8 +19,8 @@ function Experiences() {
               my experience
             </TextReveal>
             <TextReveal as="p" className="text-gray-500 dark:text-gray-400">
-              Here are some of my work experiences where I&apos;ve turned
-              challenges into accomplishments, making things happen.
+              here are some of my work experiences where I&apos;ve turned
+              challenges into accomplishments, making things happen
             </TextReveal>
           </div>
           <div className="grid gap-4">

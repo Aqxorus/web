@@ -19,15 +19,23 @@ function About() {
               about me
             </TextReveal>
             <div className="space-y-4">
-              <TextReveal
-                as="p"
-                className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
-              >
-                Hey there 👋 || I&apos;m a developer from NZ.
-              </TextReveal>
+              <div className="">
+                <TextReveal
+                  as="p"
+                  className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
+                  hey there 👋
+                </TextReveal>
+                <TextReveal
+                  as="p"
+                  className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
+                  i&apos;m a developer from new zealand
+                </TextReveal>
+              </div>
               <div className="flex gap-2">
                 <Button asChild>
-                  <Link href="/about">Learn More</Link>
+                  <Link href="/about">learn more</Link>
                 </Button>
               </div>
             </div>

@@ -21,7 +21,7 @@ function Contact() {
             contact me
           </TextReveal>
           <TextReveal as="p" className="text-muted-foreground max-w-[600px]">
-            Here are my socials.
+            here are my socials
           </TextReveal>
         </div>
         <div className="flex flex-wrap">

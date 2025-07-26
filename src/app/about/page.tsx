@@ -52,13 +52,13 @@ export default function About() {
             as="h1"
             className="leading-wide tracking-relaxed z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Enthusiast
+            enthusiast
           </TextReveal>
           <TextReveal
             as="h1"
             className="leading-wide tracking-relaxed z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Developer
+            developer
           </TextReveal>
           <motion.div
             className="mt-8"
@@ -81,19 +81,17 @@ export default function About() {
             <div className="space-y-8">
               <TextReveal
                 as="h3"
-                className="font-serif text-3xl leading-tight sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
+                className="text-3xl leading-tight sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                developer
+                ev4n | aqxorus
               </TextReveal>
               <TextReveal
                 as="p"
                 className="text-muted-foreground text-base leading-relaxed sm:text-lg md:text-lg lg:text-xl xl:text-2xl"
               >
-                I am Ev4n, a passionate software developer and designer from New
-                Zealand. I have extensive experience in both front-end and
-                back-end development, enabling me to create engaging user
-                experiences. My passion for technology stems from a desire to
-                constantly learn and grow.
+                Heya, I&apos;m ev4n, a developer from New Zealand. In my free
+                time, I enjoy creating projects for fun, and learning new
+                technologies along the way.
               </TextReveal>
             </div>
           </div>
@@ -134,15 +132,14 @@ export default function About() {
               className="relative h-full w-full cursor-pointer items-center justify-center overflow-hidden"
               ref={testimonialsRef}
             >
-              <div className="flex h-full w-full flex-wrap items-center justify-start gap-4">
+              <div className="flex h-full w-full flex-wrap items-center justify-start">
                 {technologies.map((technology, index) => (
-                  <>
+                  <React.Fragment key={`technology_fragment_${index}`}>
                     <TechnologyCard
                       key={`technology_${index}`}
                       name={technology.name}
                       containerRef={testimonialsRef}
                     />
-
                     {index < technologies.length - 1 && (
                       <TechnologyCard
                         key={`technology_sep_${index}`}
@@ -150,7 +147,13 @@ export default function About() {
                         containerRef={testimonialsRef}
                       />
                     )}
-                  </>
+                    {index < technologies.length - 1 && (
+                      <span
+                        key={`technology_space_${index}`}
+                        className="mr-4"
+                      />
+                    )}
+                  </React.Fragment>
                 ))}
               </div>
             </div>

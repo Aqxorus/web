@@ -11,17 +11,17 @@ const NotFoundPage: React.FC = () => {
 
   return (
     <div
-      className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden bg-[#efefef]"
+      className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden"
       ref={containerRef}
     >
       <div className="z-30 flex flex-col items-center justify-center gap-4">
         <h1 className="text-3xl md:text-6xl">page not found</h1>
-        <div className="w-full rounded-full bg-[#efefef]">
+        <div className="rounded-full bg-[#efefef]">
           <Link
             href="/"
             className={cn(
               buttonVariants({ variant: 'default' }),
-              'w-full self-center rounded-full px-8 py-2 md:self-start'
+              'self-center px-8 py-2 md:self-start'
             )}
           >
             Home

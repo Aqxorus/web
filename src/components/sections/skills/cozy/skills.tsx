@@ -19,8 +19,8 @@ function Skills() {
             </TextReveal>
           </div>
           <p className="mt-4 hidden text-gray-500 lg:mt-0 lg:block lg:w-[35%] dark:text-gray-400">
-            Here are some of my skills where I&apos;ve turned knowledge into
-            expertise, making things happen.
+            here are some of my skills where I&apos;ve turned knowledge into
+            expertise, making things happen
           </p>
         </div>
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
