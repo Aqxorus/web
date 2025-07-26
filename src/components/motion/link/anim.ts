@@ -1,4 +1,6 @@
-export const titleAnimation = {
+import { Variants } from 'motion/react';
+
+export const titleAnimation: Variants = {
   rest: {
     transition: {
       staggerChildren: 0.003
@@ -11,7 +13,7 @@ export const titleAnimation = {
   }
 };
 
-export const letterAnimation = {
+export const letterAnimation: Variants = {
   rest: {
     y: 0
   },
@@ -20,12 +22,12 @@ export const letterAnimation = {
     transition: {
       duration: 0.3,
       ease: [0.6, 0.01, 0.05, 0.95],
-      type: 'tween'
+      type: 'tween' as const
     }
   }
 };
 
-export const letterAnimationTwo = {
+export const letterAnimationTwo: Variants = {
   rest: {
     y: 30
   },
@@ -34,7 +36,7 @@ export const letterAnimationTwo = {
     transition: {
       duration: 0.3,
       ease: [0.6, 0.01, 0.05, 0.95],
-      type: 'tween'
+      type: 'tween' as const
     }
   }
 };

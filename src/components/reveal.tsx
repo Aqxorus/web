@@ -18,7 +18,11 @@ export function Reveal({ phrases, className = '', as = 'div' }: RevealProps) {
     enter: (i: number) => ({
       y: '0',
       opacity: 1,
-      transition: { duration: 0.5, ease: [0.33, 1, 0.68, 1], delay: 0.05 * i }
+      transition: {
+        duration: 0.5,
+        ease: [0.33, 1, 0.68, 1] as const,
+        delay: 0.05 * i
+      }
     })
   };
 

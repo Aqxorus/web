@@ -44,31 +44,31 @@ const Header = ({ loader }: HeaderProps) => {
       height: 'auto',
       opacity: 1,
       transition: {
-        height: { duration: 0.5, ease: 'easeInOut' },
-        opacity: { duration: 1, ease: 'easeInOut' }
+        height: { duration: 0.5, ease: 'easeInOut' as const },
+        opacity: { duration: 1, ease: 'easeInOut' as const }
       }
     },
     initial: {
       height: 0,
       opacity: 0,
       transition: {
-        height: { duration: 0.5, ease: 'easeInOut' },
-        opacity: { duration: 0.25, ease: 'easeInOut' }
+        height: { duration: 0.5, ease: 'easeInOut' as const },
+        opacity: { duration: 0.25, ease: 'easeInOut' as const }
       }
     },
     closed: {
       height: 0,
       opacity: 0,
       transition: {
-        height: { duration: 0.5, ease: 'easeInOut' },
-        opacity: { duration: 0.25, ease: 'easeInOut' }
+        height: { duration: 0.5, ease: 'easeInOut' as const },
+        opacity: { duration: 0.25, ease: 'easeInOut' as const }
       }
     }
   };
 
   return (
     <motion.header
-      className="fixed z-20 w-full bg-background/80 backdrop-blur-lg"
+      className="bg-background/80 fixed z-20 w-full backdrop-blur-lg"
       initial={{
         y: -80
       }}
@@ -81,7 +81,10 @@ const Header = ({ loader }: HeaderProps) => {
     >
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex w-full justify-between">
-          <Link href="/" className="inline-flex items-center justify-center text-md font-semibold">
+          <Link
+            href="/"
+            className="text-md inline-flex items-center justify-center font-semibold"
+          >
             {meta.author.name}
           </Link>
 

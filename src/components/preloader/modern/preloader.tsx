@@ -25,11 +25,15 @@ export function Preloader({ children }: PreloaderProps) {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] }
+      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] as const }
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 }
+      transition: {
+        duration: 0.7,
+        ease: [0.76, 0, 0.24, 1] as const,
+        delay: 0.3
+      }
     }
   };
 
@@ -38,7 +42,7 @@ export function Preloader({ children }: PreloaderProps) {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="fixed z-999 flex h-[100dvh] w-[100dvw] cursor-wait items-center justify-center bg-background px-[60px] pb-[40px]"
+      className="bg-background fixed z-999 flex h-[100dvh] w-[100dvw] cursor-wait items-center justify-center px-[60px] pb-[40px]"
     >
       {dimension.width > 0 && (
         <>
@@ -48,7 +52,7 @@ export function Preloader({ children }: PreloaderProps) {
             animate="enter"
             className={cn(
               teko.className,
-              'absolute z-1 flex items-center text-[192px] text-foreground'
+              'text-foreground absolute z-1 flex items-center text-[192px]'
             )}
           >
             {children}

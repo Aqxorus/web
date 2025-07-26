@@ -1,6 +1,8 @@
-const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+import { Variants } from 'motion/react';
 
-export const opacity = {
+const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] as const };
+
+export const opacity: Variants = {
   initial: {
     opacity: 0
   },
@@ -14,7 +16,7 @@ export const opacity = {
   }
 };
 
-export const height = {
+export const height: Variants = {
   initial: {
     height: 0
   },
@@ -28,7 +30,7 @@ export const height = {
   }
 };
 
-export const background = {
+export const background: Variants = {
   initial: {
     height: 0
   },
@@ -42,7 +44,7 @@ export const background = {
   }
 };
 
-export const blur = {
+export const blur: Variants = {
   initial: {
     filter: 'blur(0px)',
     opacity: 1
@@ -67,11 +69,15 @@ export const translate = {
   enter: (i: number[]) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: 1, ease: [0.76, 0, 0.24, 1], delay: i[0] }
+    transition: { duration: 1, ease: [0.76, 0, 0.24, 1] as const, delay: i[0] }
   }),
   exit: (i: number[]) => ({
     y: '100%',
     opacity: 0,
-    transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1] }
+    transition: {
+      duration: 0.7,
+      ease: [0.76, 0, 0.24, 1] as const,
+      delay: i[1]
+    }
   })
 };

@@ -21,7 +21,7 @@ const textLoopVariants = {
 };
 
 const textLoopTransition = {
-  type: 'spring',
+  type: 'spring' as const,
   stiffness: 900,
   damping: 80,
   mass: 10
@@ -94,7 +94,7 @@ function Hero() {
           yStart: '-10%',
           yEnd: '10%',
           scaleStart: 1,
-          scaleEnd: 1.5
+          scaleEnd: 1
         }}
       />
     </section>
