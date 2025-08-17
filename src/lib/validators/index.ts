@@ -11,9 +11,9 @@ export const ContactFormSchema = z.object({
     }),
   email: z
     .string({
-      required_error: 'Please enter a valid email.'
+      message: 'Please enter a valid email.'
     })
-    .email(),
+    .email({ message: 'Please enter a valid email.' }),
   message: z.string().max(380).min(4, {
     message: 'Message must be at least 4 characters.'
   })

@@ -50,12 +50,12 @@
     "tailwindcss-animate": "^1.0.7",
     "uuid": "^11.1.0",
     "vaul": "^1.1.2",
-    "zod": "^3.23.8"
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@content-collections/core": "^0.7.3",
+    "@content-collections/core": "^0.10.0",
     "@content-collections/mdx": "^0.2.2",
     "@content-collections/next": "^0.2.6",
     "@fumadocs/content-collections": "^1.2.1",
